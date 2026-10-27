@@ -81,7 +81,3 @@ Annual family income (Rs.): 100000
 Chitra: Aggregate below 75%
 Divya: Subject mark below 50%
 ```
-
-
-
-Note: The thresholds and tie-breaking rules in this example are illustrative. They can be changed to match the university's official scholarship policy.
