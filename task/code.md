@@ -32,7 +32,7 @@ The system displays the eligible students in rank order and identifies students 
 
 ## 3. Flowchart
 
-```Mermaid
+``` Mermaid
 flowchart TD
     A([Start]) --> B[/Input applicant details and criteria/]
     B --> C[Check aggregate marks]
