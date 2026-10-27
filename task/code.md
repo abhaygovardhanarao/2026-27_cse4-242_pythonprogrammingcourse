@@ -32,7 +32,33 @@ The system displays the eligible students in rank order and identifies students 
 
 ## 3. Flowchart
 
+```Mermaid
+flowchart TD
+    A([Start]) --> B[/Input applicant details and criteria/]
+    B --> C[Check aggregate marks]
+    C --> D[Check minimum subject marks]
+    D --> E[Check attendance]
+    E --> F[Check annual family income]
+    F --> G{All criteria satisfied?}
 
+    G -- Yes --> H[Add student to eligible list]
+    G -- No --> I[Record rejection reasons]
+
+    H --> J{More applicants?}
+    I --> J
+
+    J -- Yes --> B
+    J -- No --> K[Sort eligible students by ranking rules]
+    K --> L[Resolve ties using attendance, income, subject marks and name]
+    L --> M[/Display ranked eligible students/]
+    M --> N[/Display ineligible students and reasons/]
+    N --> O([Stop])
+
+    classDef startEnd fill:#d8f3dc,stroke:#2d6a4f,color:#000
+    classDef decision fill:#fff0c2,stroke:#b8860b,color:#000
+    class A,O startEnd
+    class G,J decision
+```
 
 ## 5. Sample Input
 
